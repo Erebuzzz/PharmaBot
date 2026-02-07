@@ -125,7 +125,7 @@ api_key = os.getenv('api_key')
 def get_ai_response(prompt):
   client = OpenAI(
     base_url="https://openrouter.ai/api/v1",
-    api_key="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",
+    api_key="api_key",
   )
 
   completion = client.chat.completions.create(
