@@ -1,0 +1,30 @@
+# Task: PharmaBot RAG Application
+
+- [ ] **Project Setup** <!-- id: 0 -->
+    - [x] Create `implementation_plan.md` <!-- id: 1 -->
+    - [x] Create project directory structure (`frontend`, `backend`) <!-- id: 2 -->
+    - [x] Create `team_roles.md` and define responsibilities <!-- id: 25 -->
+- [ ] **Data Pipeline (RAG)** <!-- id: 3 -->
+    - [ ] Analyze `medicine_dataset.csv` and decide on enrichment strategy <!-- id: 4 -->
+    - [ ] Ingest additional datasets (Kaggle: `az-medicine-dataset-of-india`, `medicines-dataset`) <!-- id: 26 -->
+    - [ ] Merge datasets and handle schema alignment <!-- id: 27 -->
+    - [ ] Create `ingest.py` to load, enrich, and vectorize data using BioBERT <!-- id: 5 -->
+    - [ ] Set up Vector Database (ChromaDB) with BioBERT embeddings <!-- id: 6 -->
+- [ ] **Backend (FastAPI)** <!-- id: 7 -->
+    - [ ] Setup FastAPI server <!-- id: 8 -->
+    - [ ] Implement Search/Query API <!-- id: 9 -->
+    - [ ] Implement "Identification" API (Text based) <!-- id: 10 -->
+    - [ ] Integrate LLM (Gemini) for generating answers (Features: Uses, Side Effects, Mechanism, etc.) <!-- id: 11 -->
+    - [ ] Integrate Comet API for fail-safe logging/monitoring <!-- id: 24 -->
+    - [ ] Add Safety Guardrails & Disclaimers to LLM prompts <!-- id: 20 -->
+    - [ ] Implement "Symptom Checker" (Non-diagnostic, informational only) <!-- id: 21 -->
+    - [ ] Implement "Alternatives/Substitutes" logic <!-- id: 22 -->
+- [ ] **Frontend (React/Vite)** <!-- id: 12 -->
+    - [ ] Initialize React app with Tailwind CSS <!-- id: 13 -->
+    - [ ] Create Chat Interface with Safety Disclaimers <!-- id: 14 -->
+    - [ ] Create Medicine Detail View (showing all requested fields including Mechanism, Warnings, etc.) <!-- id: 15 -->
+    - [ ] Integrate with Backend APIs <!-- id: 16 -->
+    - [ ] Add "How/When to Use" and "Who should be careful" sections <!-- id: 23 -->
+- [ ] **Verification** <!-- id: 17 -->
+    - [ ] Verify RAG responses for sample medicines <!-- id: 18 -->
+    - [ ] Verify UI flows <!-- id: 19 -->

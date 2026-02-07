@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+python-multipart
+chromadb
+pandas
+google-generativeai
+python-dotenv
+requests
+transformers
+torch
+sentence-transformers
+nltk
+comet_ml
