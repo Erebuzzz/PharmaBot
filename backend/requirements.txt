@@ -1,13 +1,11 @@
 fastapi
-uvicorn
+uvicorn[standard]
 python-multipart
 chromadb
 pandas
 google-generativeai
+openai
 python-dotenv
 requests
-transformers
-torch
 sentence-transformers
 nltk
-comet_ml
